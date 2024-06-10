@@ -1,0 +1,20 @@
+<!-- views/show.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Local Weather</title>
+	</head>
+	<body>
+		<h1>Local Weather</h1>
+		<h2>for <%= zipcode %></h2>
+		<ul>
+			<li>City: <%= json.name %></li>
+			<li>Current Temperature: <%= json.main.temp %></li>
+			<li>Description: <%= json.weather[0].description %></li>
+		</ul>
+		<a href="/">Back to home!</a>
+	</body>
+</html>

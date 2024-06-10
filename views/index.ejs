@@ -1,5 +1,21 @@
-<form action="/weather" method="POST">
-	<label for="zipcode">Enter your zip code: </label>
-	<input type="text" name="zipcode" required />
-	<button type="submit" value="Submit" />
-</form>
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+	</head>
+	<body>
+		<form action="/weather" method="POST">
+			<div class="zipDiv">
+				<label for="zipcode">Enter your zip code: </label>
+				<input type="text" name="zipcode" id="zipcode" required />
+			</div>
+			<div class="submitButton">
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
+	</body>
+</html>
